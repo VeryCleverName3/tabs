@@ -10,7 +10,7 @@
   if(localStorage.i >= rick.length || !(localStorage.i >= 0)){
     localStorage.i = 0;
   }
-  var words = new speechSynthesisUtterance();
+  var words = new SpeechSynthesisUtterance();
   words.text = rick[localStorage.i];
   speechSynthesis.speak(words);
   localStorage.i++;
