@@ -12,7 +12,7 @@
   }
   var words = new SpeechSynthesisUtterance();
   words.text = rick[localStorage.i];
-  speechSynthesis.speak(words);
+  setTimeout(function(){speechSynthesis.speak(words);}, 10);
   localStorage.i++;
   setTimeout(function(){window.open("https://veryclevername3.github.io/tabs/index.html")}, 2000);
 </script>
